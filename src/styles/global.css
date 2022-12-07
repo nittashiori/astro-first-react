@@ -4,6 +4,7 @@
 
   --color-primary: #24A8BF;
   --color-text: #333333;
+  --color-white: #fff;
 }
 html {
   font-family: system-ui, sans-serif;
