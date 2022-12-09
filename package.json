@@ -8,7 +8,9 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "storybook": "start-storybook -p 6006 -s ./public",
+    "build-storybook": "build-storybook -s public"
   },
   "dependencies": {
     "@astrojs/vercel": "^2.3.4",
@@ -16,8 +18,22 @@
   },
   "devDependencies": {
     "@astrojs/react": "^1.2.2",
+    "@babel/core": "^7.20.5",
+    "@storybook/addon-actions": "^6.5.14",
+    "@storybook/addon-essentials": "^6.5.14",
+    "@storybook/addon-interactions": "^6.5.14",
+    "@storybook/addon-links": "^6.5.14",
+    "@storybook/builder-webpack4": "^6.5.14",
+    "@storybook/manager-webpack4": "^6.5.14",
+    "@storybook/react": "^6.5.14",
+    "@storybook/testing-library": "^0.0.13",
     "@types/react": "^18.0.26",
+    "@types/storybook__react": "^5.2.1",
+    "babel-loader": "^8.3.0",
+    "css-loader": "^6.7.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "style-loader": "^3.3.1",
+    "typescript": "^4.9.4"
   }
 }
