@@ -1,0 +1,60 @@
+.sectionBlock {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.body {
+  display: grid;
+  gap: 40px;
+  padding: 0 40px;
+}
+
+img {
+  width: 100%;
+}
+
+.title {
+  display: grid;
+  gap: 25px;
+}
+
+.title .en {
+  font-size: 1.6rem;
+}
+
+.title .jp {
+  font-size: 3.2rem;
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.text {
+  line-height: 1.75;
+  white-space: pre-line;
+}
+
+
+@media screen and (max-width: 767px) {
+  .sectionBlock {
+    grid-template-columns: auto;
+    grid-template-rows: max-content minmax(0, 1fr);
+  }
+
+  .body {
+    padding: 30px 0;
+  }
+
+  .title .en {
+    font-size: 1.5rem;
+  }
+
+  .title .jp {
+    font-size: 2.6rem;
+  }
+
+  .text {
+    margin-top: calc(-1 * var(--font-size-sp));
+  }
+}

@@ -5,12 +5,28 @@
   --color-primary: #24A8BF;
   --color-text: #333333;
   --color-white: #fff;
+
+  --font-size-pc: 1.6rem;
+  --font-size-sp: 1.5rem;
 }
 html {
   font-family: "Arial", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", system-ui, sans-serif;
   background-color: #F6F6F6;
+  font-size: 62.5%;
+  color: var(--color-text);
 }
+
+body {
+  font-size: var(--font-size-pc);
+}
+
 code {
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    font-size: var(--font-size-sp);
+  }
 }

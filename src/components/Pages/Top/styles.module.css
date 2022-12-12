@@ -1,0 +1,16 @@
+.contents {
+  display: grid;
+  gap: 100px;
+  width: 100%;
+  max-width: 1110px;
+  margin: auto;
+  padding: 50px 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+  .contents {
+    gap: 70px;
+    max-width: 100%;
+  }
+}
