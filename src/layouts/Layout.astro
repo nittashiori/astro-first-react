@@ -1,6 +1,10 @@
 ---
 import '../styles/destyle.css';
 import '../styles/global.css';
+
+import Header from '../components/Molecules/Header';
+import Footer from '../components/Molecules/Footer';
+
 export interface Props {
 	pageName: string;
 	desc: string;
@@ -34,6 +38,8 @@ const ogImage = `${Astro.url.origin}/og.jpg`
 		<title>{pageTitle}</title>
 	</head>
 	<body>
+		<Header />
 		<slot />
+		<Footer />
 	</body>
 </html>
