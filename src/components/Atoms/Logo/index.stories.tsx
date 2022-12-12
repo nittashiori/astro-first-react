@@ -1,8 +1,8 @@
-import Header from './index';
+import Logo from './index';
 
 export default {
   title: 'Atoms/Logo',
-  component: Header,
+  component: Logo,
 };
 
-export const $default: React.FC = () => <Header />;
+export const $default: React.FC = () => <Logo />;
