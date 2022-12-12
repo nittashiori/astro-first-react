@@ -1,7 +1,7 @@
 import Styles from './styles.module.css';
 import Logo from '../../Atoms/Logo/index'
 
-const Title: React.FC = () => {
+const Footer: React.FC = () => {
   return (
     <footer className={Styles.footer}>
       <div className={Styles.inner}>
@@ -14,4 +14,4 @@ const Title: React.FC = () => {
   )
 }
 
-export default Title;
+export default Footer;
