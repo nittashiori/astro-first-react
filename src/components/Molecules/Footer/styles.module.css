@@ -1,0 +1,36 @@
+.footer {
+  width: 100%;
+  padding: 70px 30px 30px;
+  background: var(--color-text);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inner > * + * {
+  margin-top: 50px;
+}
+
+.logo {
+  width: 100%;
+  max-width: 180px;
+  color: var(--color-white);
+}
+
+.copyright {
+  font-size: 12px;
+  color: #8B8B8B;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 60px 20px 20px;
+  }
+
+  .logo {
+    max-width: 100px;
+  }
+}
