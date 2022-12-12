@@ -12,10 +12,6 @@
   color: var(--color-text);
 }
 
-.logo svg {
-  fill: currentColor;
-}
-
 @media screen and (max-width: 767px) {
   .header {
     padding: 30px;
