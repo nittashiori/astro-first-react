@@ -1,7 +1,7 @@
 import Header from './index';
 
 export default {
-  title: 'Atoms/Header',
+  title: 'Molecules/Header',
   component: Header,
 };
 
