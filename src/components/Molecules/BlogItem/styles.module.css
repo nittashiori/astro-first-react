@@ -1,6 +1,11 @@
 .blogItem {
   display: grid;
   gap: 20px;
+  transition: opacity var(--default-transition);
+}
+
+.blogItem:hover {
+  opacity: 0.7;
 }
 
 .body {
