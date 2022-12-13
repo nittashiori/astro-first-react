@@ -27,6 +27,7 @@ const Top: React.FC = () => {
             titleJp="ブログ"
           />
           <BlogItem
+            href="/"
             image="/images/thumbnail01.jpg"
             image2x="/images/thumbnail01@2x.jpg"
             imageWebp="/images/thumbnail01.webp"

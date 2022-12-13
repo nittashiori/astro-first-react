@@ -1,6 +1,7 @@
 import Styles from './styles.module.css';
 
 type Props = {
+  href: string;
   image: string;
   image2x: string;
   imageWebp: string;
@@ -9,12 +10,12 @@ type Props = {
   data: string;
 }
 
-const BlogItem: React.FC<Props> = ({ image, image2x, imageWebp, imageWebp2x, title, data }) => {
+const BlogItem: React.FC<Props> = ({ href, image, image2x, imageWebp, imageWebp2x, title, data }) => {
   const srcSet = `${image} 1x, ${image2x} 2x`;
   const webpSrcSet = `${imageWebp} 1x, ${imageWebp2x} 2x`;
 
   return (
-    <a className={Styles.blogItem}>
+    <a href={href} className={Styles.blogItem}>
       <div className={Styles.eyecatch}>
         <picture>
           <source type="image/webp" src={imageWebp} srcSet={webpSrcSet} />
