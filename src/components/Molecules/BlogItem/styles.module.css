@@ -1,0 +1,22 @@
+.blogItem {
+  display: grid;
+  gap: 20px;
+}
+
+.body {
+  display: grid;
+  gap: 10px;
+}
+
+.eyecatch img {
+  width: 100%;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.data {
+  font-size: 1.2rem;
+}
