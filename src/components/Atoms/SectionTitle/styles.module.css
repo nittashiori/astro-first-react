@@ -1,0 +1,30 @@
+.sectionTitle {
+  display: grid;
+  gap: 10px;
+  text-align: center;
+}
+
+.en {
+  font-size: 3.2rem;
+  color: var(--color-primary);
+  font-weight: bold;
+}
+
+.jp {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 767px) {
+  .sectionTitle {
+    gap: 5px;
+  }
+
+  .en {
+    font-size: 3rem;
+  }
+
+  .jp {
+    font-size: 1.2rem;
+  }
+}
