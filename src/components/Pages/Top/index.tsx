@@ -3,6 +3,7 @@ import Styles from './styles.module.css';
 import MainVisual from '../../Atoms/MainVisual';
 import Nav from '../../Molecules/Nav';
 import SectionBlock from '../../Organaisms/SectionBlock';
+import SectionTitle from '../../Atoms/SectionTitle';
 
 const Top: React.FC = () => {
   return (
@@ -19,6 +20,12 @@ const Top: React.FC = () => {
           空の青さを眺めて、
           一息つきましょう"
         />
+        <section>
+          <SectionTitle
+            titleEn="blog"
+            titleJp="ブログ"
+          />
+        </section>
       </div>
     </div>
   )
