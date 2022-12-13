@@ -10,7 +10,7 @@
 .link {
   display: block;
   padding: 40px;
-  transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: color var(--default-transition);
 }
 
 .link:hover {

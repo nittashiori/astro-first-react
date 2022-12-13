@@ -8,6 +8,8 @@
 
   --font-size-pc: 1.6rem;
   --font-size-sp: 1.5rem;
+
+  --default-transition: 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 }
 html {
   font-family: "Arial", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", system-ui, sans-serif;
