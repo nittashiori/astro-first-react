@@ -1,0 +1,13 @@
+.blogList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .blogList {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    gap: 20px;
+  }
+}
