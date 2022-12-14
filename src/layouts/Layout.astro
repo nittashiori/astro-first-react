@@ -40,7 +40,7 @@ const ogImage = `${Astro.url.origin}/og.jpg`
 	</head>
 	<body>
 		<Header />
-		<SpNav />
+		<SpNav client:load />
 		<slot />
 		<Footer />
 	</body>
