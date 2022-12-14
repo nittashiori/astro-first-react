@@ -1,5 +1,7 @@
 import Styles from './styles.module.css';
 
+import SectionColumn from "../../Atoms/SectionColumn"
+
 type Props =  {
   image: string;
   imageWebp: string;
@@ -8,9 +10,9 @@ type Props =  {
   text: string;
 }
 
-const SectionBlock: React.FC<Props> = ({image, imageWebp, titleEn, titleJp, text}) => {
+const Concept: React.FC<Props> = ({image, imageWebp, titleEn, titleJp, text}) => {
   return (
-    <div className={Styles.sectionBlock}>
+    <SectionColumn pcColumn={2} spColumn={1}>
       <picture className={Styles.image}>
         <source srcSet={imageWebp} type="image/webp" />
         <img src={image} alt="" />
@@ -24,8 +26,8 @@ const SectionBlock: React.FC<Props> = ({image, imageWebp, titleEn, titleJp, text
           {text}
         </p>
       </div>
-    </div>
+    </SectionColumn>
   )
 }
 
-export default SectionBlock;
+export default Concept;

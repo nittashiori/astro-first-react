@@ -1,12 +1,12 @@
-import SectionBlock from './index';
+import Concept from './index';
 
 export default {
-  title: 'Organaisms/SectionBlock',
-  component: SectionBlock,
+  title: 'Organaisms/Concept',
+  component: Concept,
 };
 
 export const $default: React.FC = () =>
-  <SectionBlock
+  <Concept
     image="/images/concept.jpg"
     imageWebp="/images/concept.webp"
     titleEn="Concept"
