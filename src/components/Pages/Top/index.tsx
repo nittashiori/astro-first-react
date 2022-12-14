@@ -1,6 +1,6 @@
 import Styles from './styles.module.css';
 
-import SpNav from '../../Molecules/Nav';
+import SpNav from '../../Molecules/SpNav';
 import MainVisual from '../../Atoms/MainVisual';
 import Nav from '../../Molecules/Nav';
 import Concept from '../../Organaisms/Concept';
