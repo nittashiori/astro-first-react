@@ -5,6 +5,7 @@ import Nav from '../../Molecules/Nav';
 import SectionBlock from '../../Organaisms/SectionBlock';
 import SectionTitle from '../../Atoms/SectionTitle';
 import BlogList from '../../Organaisms/BlogList';
+import Button from '../../Atoms/Button';
 
 import { blogLists } from '../../../../public/utils/blog'
 
@@ -30,6 +31,11 @@ const Top: React.FC = () => {
           />
           <BlogList
             lists={blogLists}
+          />
+          <Button
+            as="a"
+            href="/blog"
+            label="ブログ一覧"
           />
         </section>
       </div>
