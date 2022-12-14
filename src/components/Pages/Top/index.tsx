@@ -2,7 +2,7 @@ import Styles from './styles.module.css';
 
 import MainVisual from '../../Atoms/MainVisual';
 import Nav from '../../Molecules/Nav';
-import SectionBlock from '../../Organaisms/SectionBlock';
+import Concept from '../../Organaisms/Concept';
 import Blog from '../../Organaisms/Blog';
 
 const Top: React.FC = () => {
@@ -11,7 +11,7 @@ const Top: React.FC = () => {
       <MainVisual />
       <Nav />
       <div className={Styles.contents}>
-        <SectionBlock
+        <Concept
           image="/images/concept.jpg"
           imageWebp="/images/concept.webp"
           titleEn="Concept"

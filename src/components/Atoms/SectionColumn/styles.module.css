@@ -1,0 +1,12 @@
+.sectionColumn {
+  display: grid;
+  grid-template-columns: repeat(var(--pcColumn), 1fr);
+  align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .sectionColumn {
+      grid-template-columns: repeat(var(--spColumn), 1fr);
+      grid-template-rows: max-content minmax(0, 1fr);
+  }
+}
