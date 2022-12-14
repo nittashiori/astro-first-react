@@ -11,7 +11,6 @@ export const $default: React.FC = () => {
 
   const hundleToggle = () => {
     setIsActive(!isActive)
-    console.log(isActive)
   }
 
   return (
