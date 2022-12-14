@@ -19,7 +19,7 @@ const BlogItem: React.FC<Props> = ({ href, image, image2x, imageWebp, imageWebp2
       <div className={Styles.eyecatch}>
         <picture>
           <source type="image/webp" src={imageWebp} srcSet={webpSrcSet} />
-          <img src={image} srcSet={srcSet} alt="" />
+          <img src={image} srcSet={srcSet} alt="" width="335" height="172" loading="lazy" />
         </picture>
       </div>
       <div className={Styles.body}>

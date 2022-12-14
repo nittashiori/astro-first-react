@@ -15,7 +15,7 @@ const Concept: React.FC<Props> = ({image, imageWebp, titleEn, titleJp, text}) =>
     <SectionColumn pcColumn={2} spColumn={1}>
       <picture className={Styles.image}>
         <source srcSet={imageWebp} type="image/webp" />
-        <img src={image} alt="" />
+        <img src={image} alt="" width="555" height="547" loading="lazy" />
       </picture>
       <div className={Styles.body}>
         <h2 className={Styles.title}>
