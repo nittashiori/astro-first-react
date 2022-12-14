@@ -1,0 +1,30 @@
+.button {
+  display: inline-block;
+  width: 100%;
+  max-width: 220px;
+  padding: 18px 15px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  background: var(--color-white);
+  border-radius: 3px;
+  position: relative;
+  transition: all var(--default-transition);
+}
+
+.button:hover {
+  color: var(--color-white);
+  background: var(--color-primary);
+}
+
+.button svg {
+  width: 5px;
+  height: 9px;
+  fill: currentColor;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+}
