@@ -8,12 +8,6 @@
   box-sizing: border-box;
 }
 
-.section {
-  display: grid;
-  gap: 30px;
-  justify-items: center;
-}
-
 @media screen and (max-width: 767px) {
   .contents {
     gap: 70px;
