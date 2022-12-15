@@ -1,7 +1,7 @@
 import Styles from './styles.module.css';
 
-import { useState } from 'react';
-import cx from 'classnames';
+// import { useState } from 'react';
+// import cx from 'classnames';
 
 // type Props = {
   // isActive?: boolean;
@@ -10,17 +10,17 @@ import cx from 'classnames';
 
 const HamburgerButton: React.FC = () => {
 // const HamburgerButton: React.FC<Props> = ({ onClick }) => {
-  const [isActive, setIsActive] = useState(false);
+  // const [isActive, setIsActive] = useState(false);
 
-  const hundleToggle = () => {
-    setIsActive((prevState) => !prevState);
-  };
+  // const hundleToggle = () => {
+  //   setIsActive((prevState) => !prevState);
+  // };
 
   return (
     <button
       // className={[Styles.HamburgerButton, isActive ? Styles.isActive : ''].join(' ')}
-      className={cx(Styles.HamburgerButton, { [Styles.isActive]: isActive })}
-      onClick={hundleToggle}
+      // className={cx(Styles.HamburgerButton, { [Styles.isActive]: isActive })}
+      // onClick={hundleToggle}
     >
       <span className={Styles.inner}>
         <span></span>
