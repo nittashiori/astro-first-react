@@ -16,7 +16,8 @@ const HamburgerButton: React.FC<Props> = ({ onClick }) => {
 
   return (
     <button
-      className={[Styles.HamburgerButton, isActive ? Styles.isActive : ''].join(' ')}
+      className={Styles.HamburgerButton}
+      aria-expanded={isActive}
       onClick={hundleToggle}
     >
       <span className={Styles.inner}>
