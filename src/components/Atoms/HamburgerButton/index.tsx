@@ -2,7 +2,7 @@ import Styles from './styles.module.css';
 
 type Props = {
   isActive?: boolean;
-  onClick?: (event: any) => void
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 }
 
 const HamburgerButton: React.FC<Props> = ({ isActive = false, onClick }) => {
