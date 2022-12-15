@@ -7,16 +7,15 @@ const SpNav: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
 
   const hundleToggle = () => {
-    setIsActive(!isActive)
-    console.log(isActive)
-  }
+    setIsActive((prevState) => !prevState);
+  };
 
   return (
     <div className={[Styles.spNav, isActive ? Styles.isActive : ''].join(' ')}>
       <div className={Styles.button}>
         <HamburgerButton
           isActive={isActive}
-          onClick={() => hundleToggle()}
+          onClick={hundleToggle}
         />
       </div>
       <div className={Styles.menu}>
