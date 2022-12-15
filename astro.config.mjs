@@ -8,5 +8,8 @@ import react from "@astrojs/react"
 export default defineConfig({
   output: "server",
   adapter: vercel(),
-  integrations: [react()]
+  integrations: [react()],
+  renderers : [ 
+    '@astrojs/renderer-preact' 
+  ] 
 });
