@@ -16,7 +16,7 @@ const SpNav: React.FC = () => {
       <div className={Styles.button}>
         <HamburgerButton
           isActive={isActive}
-          onClick={hundleToggle}
+          onClick={() => hundleToggle()}
         />
       </div>
       <div className={Styles.menu}>
