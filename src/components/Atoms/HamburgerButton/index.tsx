@@ -1,9 +1,9 @@
 import Styles from './styles.module.css';
 
-// import { useState } from 'react';
+import { useState } from 'react';
 
   const HamburgerButton: React.FC = () => {
-  // const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
   // const toggle = () => setOpen(!open);
 
   return (
@@ -12,7 +12,7 @@ import Styles from './styles.module.css';
     //   onClick={() => toggle()}
     // >
     <button
-      className={Styles.HamburgerButton}
+      className={[Styles.HamburgerButton, open ? Styles.isActive : ''].join(' ')}
     >
       <span className={Styles.inner}>
         <span></span>
