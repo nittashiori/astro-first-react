@@ -4,7 +4,8 @@ import '../styles/global.css';
 
 import Header from '../components/Molecules/Header';
 import Footer from '../components/Molecules/Footer';
-import HamburgerButton from '../components/Atoms/HamburgerButton';
+// import HamburgerButton from '../components/Atoms/HamburgerButton';
+import Greeting from '../components/Atoms/Greeting';
 
 export interface Props {
 	pageName: string;
@@ -40,7 +41,8 @@ const ogImage = `${Astro.url.origin}/og.jpg`
 	</head>
 	<body>
 		<Header />
-		<HamburgerButton client:load />
+		<!-- <HamburgerButton client:load /> -->
+		<Greeting client:load messages={["Hi", "Hello", "Howdy", "Hey there"]} />
 		<slot />
 		<Footer />
 	</body>
