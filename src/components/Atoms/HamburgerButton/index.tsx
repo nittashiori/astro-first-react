@@ -1,15 +1,18 @@
 import Styles from './styles.module.css';
 
-import { useState } from 'react';
+// import { useState } from 'react';
 
   const HamburgerButton: React.FC = () => {
-  const [open, setOpen] = useState(false);
-  const toggle = () => setOpen(!open);
+  // const [open, setOpen] = useState(false);
+  // const toggle = () => setOpen(!open);
 
   return (
+    // <button
+    //   className={[Styles.HamburgerButton, open ? Styles.isActive : ''].join(' ')}
+    //   onClick={() => toggle()}
+    // >
     <button
-      className={[Styles.HamburgerButton, open ? Styles.isActive : ''].join(' ')}
-      onClick={() => toggle()}
+      className={Styles.HamburgerButton}
     >
       <span className={Styles.inner}>
         <span></span>
