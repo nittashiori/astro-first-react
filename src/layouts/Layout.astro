@@ -4,7 +4,8 @@ import '../styles/global.css';
 
 import Header from '../components/Molecules/Header';
 import Footer from '../components/Molecules/Footer';
-import SpNav from '../components/Molecules/SpNav';
+// import SpNav from '../components/Molecules/SpNav';
+import HamburgerButton from '../components/Atoms/HamburgerButton/index'
 
 export interface Props {
 	pageName: string;
@@ -40,7 +41,8 @@ const ogImage = `${Astro.url.origin}/og.jpg`
 	</head>
 	<body>
 		<Header />
-		<SpNav client:visible />
+		<!-- <SpNav client:visible /> -->
+		<HamburgerButton client:visible />
 		<slot />
 		<Footer />
 	</body>

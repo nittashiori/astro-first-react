@@ -1,4 +1,4 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import HamburgerButton from './index';
 
 export default {
@@ -7,16 +7,16 @@ export default {
 };
 
 export const $default: React.FC = () => {
-  const [isActive, setIsActive] = useState(false);
+  // const [isActive, setIsActive] = useState(false);
 
-  const hundleToggle = () => {
-    setIsActive((prevState) => !prevState);
-  };
+  // const hundleToggle = () => {
+  //   setIsActive((prevState) => !prevState);
+  // };
 
   return (
     <HamburgerButton
-      isActive={isActive}
-      onClick={hundleToggle}
+      // isActive={isActive}
+      // onClick={hundleToggle}
     />
   )
 }
