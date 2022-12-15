@@ -3,7 +3,7 @@ import Styles from './styles.module.css';
 import { useState } from 'react';
 
   const HamburgerButton: React.FC = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   // const toggle = () => setOpen(!open);
 
   return (
