@@ -10,9 +10,8 @@ export const $default: React.FC = () => {
   const [isActive, setIsActive] = useState(false);
 
   const hundleToggle = () => {
-    setIsActive(!isActive)
-    console.log(isActive)
-  }
+    setIsActive((prevState) => !prevState);
+  };
 
   return (
     <HamburgerButton
