@@ -40,7 +40,7 @@ const ogImage = `${Astro.url.origin}/og.jpg`
 	</head>
 	<body>
 		<Header />
-		<HamburgerButton client:visible />
+		<HamburgerButton client:load />
 		<slot />
 		<Footer />
 	</body>
