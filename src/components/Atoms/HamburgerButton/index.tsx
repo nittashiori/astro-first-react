@@ -14,6 +14,7 @@ const HamburgerButton: React.FC = () => {
 
   const hundleToggle = () => {
     setIsActive((prevState) => !prevState);
+    console.log("click!")
   };
 
   return (
